@@ -1,4 +1,4 @@
-name: Github Actions Example
+name: G Action
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ on:
 jobs:
   test:
     name: Running Units Tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu
 
     steps:
     - uses: actions/checkout@v1
