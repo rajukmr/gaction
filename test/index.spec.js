@@ -19,10 +19,10 @@ describe("Pencil Durability Kata Tests", () => {
 
     it("Writes text to paper that already has text written on it", () => {
       const pencil = new Pencil();
-      const paper = "Hi, my name is Chandler ";
+      const paper = "Hi, my name is Raju ";
       const result = pencil.writeOnPaper(paper, "and I love to code!");
 
-      expect(result).to.equal("Hi, my name is Chandler and I love to code!");
+      expect(result).to.equal("Hi, my name is Raju and I love to code!");
     });
 
     it("Decreases pencil durability by 5 after writing 'hello' with a durability of 50", () => {
@@ -47,22 +47,22 @@ describe("Pencil Durability Kata Tests", () => {
       expect(result).to.equal(40);
     });
 
-    it("Decreases pencil durability by 9 after writing 'Chandler' with a durability of 50", () => {
+    it("Decreases pencil durability by 9 after writing 'Raju' with a durability of 50", () => {
       const pencil = new Pencil(50);
       const paper = '';
 
-      pencil.writeOnPaper(paper, "Chandler");
+      pencil.writeOnPaper(paper, "Raju");
 
       const result = pencil.getPencilDurability();
 
       expect(result).to.equal(41);
     });
 
-    it("Writes CHANDLER with a durability of 10 and returns 'CHAND   '", () => {
+    it("Writes Raju with a durability of 10 and returns 'CHAND   '", () => {
       const pencil = new Pencil(10);
       const paper = '';
 
-      const result = pencil.writeOnPaper(paper, "CHANDLER");
+      const result = pencil.writeOnPaper(paper, "Raju");
 
       expect(result).to.equal("CHAND   ");
     });
